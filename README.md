@@ -1,2 +1,2 @@
-# 基于koa2的仿微博项目
-222
+# Koa2 微博
+author dongyu
