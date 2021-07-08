@@ -14,7 +14,7 @@ onerror(app)
 
 // middlewares
 app.use(bodyparser({
-  enableTypes:['json', 'form', 'text']
+    enableTypes:['json', 'form', 'text']
 }))
 app.use(json()) // JSON格式化
 app.use(logger()) // 日志中间件
@@ -23,7 +23,7 @@ app.use(logger()) // 日志中间件
 app.use(require('koa-static')(__dirname + '/public'))
 
 app.use(views(__dirname + '/views', {
-  extension: 'ejs' // 后缀名
+    extension: 'ejs' // 后缀名
 }))
 
 // logger
@@ -40,7 +40,7 @@ app.use(users.routes(), users.allowedMethods())
 
 // error-handling 服务端错误信息
 app.on('error', (err, ctx) => {
-  console.error('server error', err, ctx)
-});
+    console.error('server error', err, ctx)
+})
 
 module.exports = app
