@@ -8,7 +8,7 @@ const logger = require('koa-logger')
 const { isProd } = require('./utils/env')
 
 // 路由注册
-const errorViewRouter = require('./routes/view/error');
+const errorViewRouter = require('./routes/view/error')
 const index = require('./routes/index')
 const users = require('./routes/users')
 
