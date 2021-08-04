@@ -9,12 +9,14 @@ const { isProd, isTest } = require('../utils/env')
 const {
     host,
     user,
+    port,
     password,
     database
 } = MYSQL_CONF
 
 const config = {
     host,
+    port,
     dialect: 'mysql'
 }
 

@@ -2,7 +2,7 @@
  * @description sequelize 同步数据库
  */
 const seq = require('./seq')
-// require('./model');
+require('./model/index')
 
 // 测试连接
 seq
